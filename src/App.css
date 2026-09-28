@@ -107,14 +107,16 @@ body {
   }
 
   .board-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     width: 100%;
-    justify-content: space-between;
-    gap: 8px;
+    gap: 10px;
   }
 
   .square {
-    width: clamp(56px, 20vw, 72px);
-    height: clamp(56px, 20vw, 72px);
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
     border-radius: 16px;
     font-size: 1.75rem;
     box-shadow: 4px 4px 0 #4d2d66;
@@ -126,7 +128,7 @@ body {
   }
 
   .board-row + .board-row {
-    margin-top: 4px;
+    margin-top: 10px;
   }
 
   .restart-button {
