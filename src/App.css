@@ -101,7 +101,7 @@ body {
   .board {
     width: min(100%, 330px);
     box-sizing: border-box;
-    gap: 10px;
+    gap: 0;
     padding: 20px;
     border-radius: 24px;
   }
@@ -121,13 +121,17 @@ body {
   }
 
   .status {
-    margin-bottom: 4px;
+    margin-bottom: 16px;
     font-size: 1rem;
+  }
+
+  .board-row + .board-row {
+    margin-top: 8px;
   }
 
   .restart-button {
     width: 100%;
     min-height: 44px;
-    margin-top: 4px;
+    margin-top: 16px;
   }
 }
