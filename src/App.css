@@ -126,12 +126,12 @@ body {
   }
 
   .board-row + .board-row {
-    margin-top: 8px;
+    margin-top: 4px;
   }
 
   .restart-button {
     width: 100%;
     min-height: 44px;
-    margin-top: 16px;
+    margin-top: 24px;
   }
 }
